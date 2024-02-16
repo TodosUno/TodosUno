@@ -1,0 +1,35 @@
+/* Mandala.css */
+.mandala-container {
+    position: relative;
+    width: 300px; /* Ajusta el tamaño según tu diseño */
+    height: 300px;
+
+  }
+  
+  .punto {
+    position: absolute;
+    width: 43%; /* Ajusta el tamaño del punto según tu diseño */
+    height: 30px;
+    color: white;
+    background-color: black;/* Ajusta el color según tu diseño */
+    border-radius: 30%;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    justify-content:center;
+    align-items: center;
+  }
+
+
+  
+/*  65333a8a20c26e486be53e11 */
+  
+
+  
+@media (min-width: 300px) and (max-width: 800px) {
+
+.punto {
+  width: 30%;
+  font-size: 13px;
+}
+
+}

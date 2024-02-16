@@ -1,0 +1,15 @@
+body {
+  height: 100%;
+  background-color: #f3f4f6;
+}
+
+.registerPage {
+  height: 100%;
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url("../../imgs/fondoLogin.jpg");
+}
+
+

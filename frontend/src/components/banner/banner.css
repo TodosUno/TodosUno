@@ -1,0 +1,39 @@
+
+
+
+.banner {
+    background-color:#1f1f1ff7;
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.925);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo-banner {
+  margin-right: 31%;
+  font-family: 'Philosopher', sans-serif ; 
+
+}
+
+.banner span {
+    margin-right: 3%;
+}
+
+.banner a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .banner {
+        justify-content:space-between
+    }
+    #logo-banner {
+        margin-left: 3%;
+        margin-right: 8%;
+    }
+    .banner span {
+        margin-right: 4%;
+    }
+  }

@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+
+.form_login {
+  background-color: #fff;
+  height: auto;
+  border-radius: 0 0 8px 8px;
+  width: 430px;
+  padding: 2rem 1rem 1rem 1rem;
+  display: grid;
+  justify-items: space-between;
+  box-shadow: rgba(50, 50, 93, 0.466) 0px 50px 100px -20px, rgba(0, 0, 0, 0.753) 0px 30px 60px -30px;
+}
+
+
+.loginPage .title {font-family: 'Philosopher', sans-serif; text-align: center; 
+  background-color: black; color: white;
+  width: 300px; width: 430px; padding: 1rem; border-radius: 8px 8px 0 0;
+  box-shadow: rgba(17, 36, 44, 0.692) 0px 2px 4px 0px, rgba(14, 30, 37, 0.582) 0px 2px 16px 0px;
+  font-size: 31px;
+}
+
+
+.form span {
+  color: red;
+  margin-top: 2%;
+  font-size: 14px;
+  margin-left: 1%;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.form__group_login {
+  display: grid;
+  align-content: center;
+  margin-bottom: 6%;
+}
+
+.form__group_login label {
+  font-size: 1rem;
+  margin-bottom: 2%;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+}
+
+.form__group_login .input_login {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: solid 2px #eceff1;
+  font-family: 'Noto Sans JP', sans-serif;
+  height:55%;
+}
+
+.form_bottom_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__login-link {
+ 
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #342d60;
+  cursor: pointer;
+  height: 40px;
+  text-decoration:none;
+  display:flex;
+justify-content: center;
+align-items: center;
+color: black;
+margin-bottom: 4%;
+margin-top: 2%;
+}
+
+.form__login-link:hover {
+background-color: #342d6067;
+border: 1px solid #342d6031;
+color: white;
+}
+
+
+.form__p {
+  text-decoration: underline;
+}
+
+.form_btn_login {
+  height: 40px;
+  color: #fff;
+  background-color: #342d60;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.form_btn_login:hover {
+  background-color: #342d6085;
+  border: 1px solid #342d6031;
+}
+
+
+/*@media (min-width: 768px) {
+  .form {
+    background-color: #fff;
+    width: 400px;
+    height: 240px;
+    border-radius: 8px;
+    padding: 1rem;
+    display: grid;
+    justify-items: space-between;
+  }
+
+  .form__group {
+    margin-bottom: 1rem;
+  }
+} */
+
+@media (min-width: 300px) and (max-width: 800px) {
+
+  .form_login {
+    width: 283px;
+  }
+
+ 
+  .loginPage .title {
+    width: 283px;
+  }
+}

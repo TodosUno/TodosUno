@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); 
+
+.header {
+  height: 40px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color:#000000db;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  grid-area: header;
+  color: white;
+}
+
+.header .levelSpan {
+  font-size: 20px;
+  font-family: 'Philosopher', sans-serif ;
+  margin-left: 17%;
+}
+
+
+#logo {
+  font-size: 27px;
+  font-family: 'Philosopher', sans-serif ;
+  
+}
+
+.header__content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.active {
+  color: rgb(10, 182, 10);
+}
+
+.inactive {
+  color: red;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 800px) {
+ 
+  .header__content-container span {
+    display: none;
+  }
+  .header .levelSpan {
+    margin-left: 1%;
+    font-size:19px;
+  }
+}
+

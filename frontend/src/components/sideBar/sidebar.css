@@ -1,0 +1,252 @@
+/* Estilos generales */
+.sideBar {
+  width: 19%;
+  background: #353535;
+  transition: width 0.3s ease;
+  grid-area: sidebar;
+  z-index: 10;
+  position: relative;
+}
+
+.sideBar_list a {
+  text-decoration: none;
+  color: white;
+}
+
+.sideBar_list {
+  list-style: none;
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  padding: 0rem 1rem;
+  height: auto;
+  overflow: hidden;
+  display: grid;
+  margin-top: 15%;
+  cursor: pointer;  
+}
+
+.sideBar_list li {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #ffffff42;
+  font-weight: 300 
+  
+}
+.sideBar_list li svg {
+  margin-right: 3%;
+}
+
+
+.sideBar_list-item:hover {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.closed {
+  width: 0;
+  padding: 36px 0;
+  z-index: 200; /* Agregado para estar por encima de otros componentes en pantallas pequeñas */
+}
+
+.sideBar__toggle-container {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  transition: width 0.3s ease, opacity 0.3s ease;
+  background-color: #23292f;
+  width: 25px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 101;
+}
+
+.sideBar__toggle-container.closed {
+  position: relative;
+  right: -20%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sideBar.closed .sideBar_top {
+  display: none;
+}
+
+.sideBar.closed .sideBar_list {
+  display: none;
+}
+
+.toggleButton {
+  cursor: pointer;
+  color: #fff;
+}
+
+.dropdown-list {
+  padding-top: 0.8rem;
+  display: none;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.dropdown-list.open {
+  display: block;
+  max-height: 1000px;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.sideBar_list-item .active {
+  color: #fff;
+}
+
+
+/*  INACTIVE USERS   */
+
+.dashboard__top {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+
+}
+
+.dashboard__top ul {
+  list-style: none;
+    width: 100%;
+    padding-left: 0;
+}
+
+.acceptPay {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+.acceptPay p, .acceptPay span {
+    text-align: start;
+    margin-bottom: 3%;
+    font-size: 14px;
+    
+}
+
+.btnPay{
+  width: 49%;
+  padding: 2%;
+  color: white;
+  border-radius: 3px;
+}
+
+.btnPay:hover {
+  border: 2px solid white;
+}
+
+.buttons {
+  margin-top: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#acceptPay p {
+  margin-bottom: 1px;
+  margin-top: 0;
+}
+
+#acceptPay span {
+  margin-bottom: 4%;
+}
+
+#acceptPay{
+  text-align: right;
+  cursor: pointer;
+  margin-right: 2%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 15px;
+}
+
+
+/*.acceptPay button {
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  margin-left: 0.5%;
+  color: white;
+  background: green;
+  
+}
+.acceptPay button:hover {
+  background: rgba(0, 128, 0, 0.651);
+}*/
+
+.noPays {
+
+  margin: 1% 0% 1% 0%;
+  font-size:15px;
+}
+
+.addToRefer{
+  margin-top: 6%;
+  padding: 1%;
+  border: 1px solid #0e8213;
+  background-color: #0e8213;
+  color: white;
+  padding: 4% 2% 4% 2%;
+  font-size: 15px;
+  border-radius: 3px;
+  width: 100%;
+  
+}
+
+.addToRefer:hover {
+ background-color: #176100;
+}
+
+
+@media (min-width: 300px) and (max-width: 800px) {
+ 
+  .sideBar{
+   width: 34%;
+  }
+  .closed {
+    width: 0 !important;
+  }
+  .sideBar_list{
+    font-size: 14px;
+  }
+  .sideBar_list li {
+    margin-bottom: 15%;
+    padding-bottom: 11%;
+  }
+
+  .dashboard__top {
+    width: 80%;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons button {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+ }
+ 

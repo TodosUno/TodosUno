@@ -1,0 +1,6 @@
+# .gitignore
+
+# Node.js
+node_modules/
+
+.next

@@ -1,0 +1,58 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');*/
+
+.quienesSomos {
+  
+    color: #000000b5;
+    padding-top: 0%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 4%;
+    /* background-color: rgb(17 17 17 / 78%); */
+    background-color: transparent;
+    padding: 1%;
+    height: 53%;
+    margin-top: 6%;
+    
+ 
+}
+
+.quienesSomos h1 {
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0%;
+    font-family: 'Philosopher', sans-serif ;
+    color:#403f3f;
+    font-size:80px
+}
+.quienesSomos .sub {
+    color:#c2a5e4
+}
+.quienesSomos p {
+    font-size: 19px;
+    margin-top: 2%;
+    line-height: 30px;
+    margin-bottom: 0%;
+    font-family: 'PT Serif', serif;
+}
+
+
+@media (min-width: 300px) and (max-width: 800px) {
+
+    .quienesSomos h1 {
+        font-size: 40px;
+    }
+
+    .quienesSomos {
+        margin-top: 25%;
+    }
+
+    .quienesSomos p {
+        font-size: 13px;
+
+    }
+    .texto {
+        width: 184px;
+    }
+  }

@@ -1,0 +1,15 @@
+.breadCrum {
+  width: 100%;
+}
+
+.breadCrum__title {
+  margin: 0;
+  padding: 1rem 1rem 1rem 0rem;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .breadCrum__title {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,69 @@
+/*.baner {
+  background-color: #2d353c;
+  height: 95px;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.baner__top {
+  display: grid;
+}
+
+.baner__title,
+.baner__value,
+.baner__p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.baner__title {
+  font-weight: 300;
+}
+
+.baner__value {
+  font-weight: 600;
+}
+
+.baner__icon-container {
+  height: 78px;
+}
+
+.baner__icon {
+  color: gray;
+  height: 100%;
+  width: 100%;
+}
+
+.baner__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr.baner__line {
+  width: 100%;
+  background-color: #000;
+  height: 1px;
+  border: none;
+  margin: 20px 0;
+}
+
+@media (min-width: 1024px) {
+  .baner {
+    height: 115px;
+    padding: 1.2rem;
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  .baner__title,
+  .baner__value {
+    font-size: 1.2rem;
+  }
+
+  .baner__icon-container {
+    height: 100px;
+  }
+}
+*/
